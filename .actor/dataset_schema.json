@@ -1,0 +1,27 @@
+{
+    "actorSpecification": 1,
+    "fields": {
+        "type": "object",
+        "properties": {
+            "summary": {"type": "object"},
+            "results": {"type": "array"},
+            "executedAt": {"type": "string", "format": "date-time"}
+        }
+    },
+    "views": {
+        "overview": {
+            "title": "Results",
+            "transformation": {
+                "fields": ["executedAt", "summary", "results"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "executedAt": {"label": "Executed at", "format": "date"},
+                    "summary": {"label": "Summary", "format": "object"},
+                    "results": {"label": "Results", "format": "array"}
+                }
+            }
+        }
+    }
+}

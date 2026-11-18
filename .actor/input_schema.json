@@ -1,0 +1,30 @@
+{
+    "title":  "askui Actor Input",
+    "schemaVersion":  1,
+    "required":  [
+                     "instructions"
+                 ],
+    "type":  "object",
+    "properties":  {
+                       "screenshotOnError":  {
+                                                 "title":  "Screenshot on Error",
+                                                 "description":  "Take screenshots when errors occur",
+                                                 "default":  true,
+                                                 "type":  "boolean"
+                                             },
+                       "instructions":  {
+                                            "default":  [
+                                                            "Click on the button with text \u0027Submit\u0027",
+                                                            "Type \u0027hello world\u0027 into the search box"
+                                                        ],
+                                            "description":  "Array of natural language instructions for UI automation",
+                                            "editor":  "stringList",
+                                            "minItems":  1,
+                                            "type":  "array",
+                                            "items":  {
+                                                          "type":  "string"
+                                                      },
+                                            "title":  "UI Instructions"
+                                        }
+                   }
+}

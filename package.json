@@ -1,0 +1,28 @@
+{
+  "name": "mpelas-actor-askui-apify-actor",
+  "version": "1.0.0",
+  "description": "Apify Actor for askui UI automation",
+  "main": "dist/main.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "echo No tests yet"
+  },
+  "keywords": [
+    "apify",
+    "actor",
+    "askui"
+  ],
+  "author": "mpelas",
+  "license": "ISC",
+  "dependencies": {
+    "apify": "^3.5.2",
+    "askui": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.25",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "askui actor v2 output",
+    "properties": {
+        "dataset": {
+            "type": "string",
+            "title": "Results dataset",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+        }
+    }
+}

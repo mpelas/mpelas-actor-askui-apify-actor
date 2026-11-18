@@ -1,0 +1,17 @@
+{
+  "actorSpecification": 1,
+  "name": "mpelas-actor-askui-apify-actor-v2",
+  "title": "askui UI Automation Actor v2",
+  "description": "Runs natural-language UI automation instructions with the askui vision agent inside a headless desktop (Xvfb). Pay-per-event: $0.005 per executed instruction.",
+  "version": "2.0",
+  "buildTag": "latest",
+  "meta": {
+    "generatedBy": "mistral-large-4-0"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "dockerfile": "../Dockerfile"
+}
