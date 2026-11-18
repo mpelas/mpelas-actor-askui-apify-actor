@@ -1,12 +1,7 @@
 {
-  "comment": "Example 1: Simple Web Automation",
-  "example1": {
-    "instructions": [
-      "Open browser and navigate to https://example.com",
-      "Click on the link with text 'More information'",
-      "Wait for 2 seconds",
-      "Take a screenshot"
-    ],
-    "screenshotOnError": true
-  }
+  "instructions": [
+    "Open browser and navigate to https://example.com",
+    "Click on the link with text 'More information'"
+  ],
+  "screenshotOnError": true
 }
