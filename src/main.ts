@@ -5,6 +5,8 @@
 // Main actor function
 async function main() {
   await Actor.init();
+  // One-time per-run charge event (pay-per-event monetization)
+  await Actor.charge({ eventName: 'run_started', count: 1 });
 
   try {
     const input = await Actor.getInput() as {
